@@ -1,0 +1,86 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SaisieNotesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\SaisieNotes.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\SaisieNotes.mdb</Value>
+    </Setting>
+    <Setting Name="ScolariteConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Scolarite.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Scolarite.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True</Value>
+    </Setting>
+    <Setting Name="SaisieNotesConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\bin\Debug\SaisieNotes.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\bin\Debug\SaisieNotes.mdb</Value>
+    </Setting>
+    <Setting Name="SaisieNotesSZConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\SAIDANI\Desktop\SaisieNotesSZ.accdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\SAIDANI\Desktop\SaisieNotesSZ.accdb</Value>
+    </Setting>
+    <Setting Name="ScolariteConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\bin\Debug\Scolarite.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\bin\Debug\Scolarite.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True</Value>
+    </Setting>
+    <Setting Name="SaisieNotesqsConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\Debug\SaisieNotesqs.accdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\Debug\SaisieNotesqs.accdb</Value>
+    </Setting>
+    <Setting Name="Database1ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="EXPORT_BDDConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\EXPORT BDD.accdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\EXPORT BDD.accdb"</Value>
+    </Setting>
+    <Setting Name="IMPORTER_BDDConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\bin\Debug\IMPORTER BDD.accdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\bin\Debug\IMPORTER BDD.accdb"</Value>
+    </Setting>
+    <Setting Name="IMPORTER_BDDConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\IMPORTER BDD.accdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="|DataDirectory|\IMPORTER BDD.accdb"</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

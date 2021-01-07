@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="Login.css">
+	<script type="text/javascript" src="Login.js"></script>
+	<title>Login</title>
+</head>
+<body>
+		<div class="container">
+			<div  id="choose" class="col-12">
+				<div class="col-12" style="border-bottom: 7px solid #e6e6e6;">
+					<img src="../../Logos/FULL.png" class="logo">
+				</div>
+				<div class="choose">	
+					<div class="choose_teacher col-6">
+						<img onclick="call_enseignant()" src="../../Logos/avatar1.png" alt="Connexion Enseignant" class="avatar"><br>
+						<input onclick="call_enseignant()" type="submit" name="" value="Enseignant">
+					</div>
+					<div class="choose_student col-6">
+						<img onclick="call_etudiant()" src="../../Logos/avatar21.png" alt="Connexion Etudiant" class="avatar"><br>
+						<input onclick="call_etudiant()" type="submit" name="" value="Etudiant">
+					</div>
+				</div>
+			</div>
+
+
+			<div id="Enseignant_login" class="col-12" style="display: none;">
+				<div class="col-12" style="border-bottom: 7px solid #e6e6e6;">
+					<img src="../../Logos/FULL.png" class="logo col-9">
+					<div class="col-3"><input type="submit" name="Retour" value="Retour" onclick="back()"></div>
+				</div>
+				<div id="login" class="login col-12">
+					<div class="col-12"><img src="../../Logos/avatar1.png" class="avatar_login"></div>
+					<form>
+						<input type="text" name="Username" placeholder="Nom d'utilisateur" required>
+						<input type="password" name="" placeholder="Mot de passe" required id="myInput">
+						<p id="text" style="display: none; color: white;margin-left: 50px;">WARNING! Caps lock is ON.</p>
+						<input type="submit" name="Connection" value="Connection"><br><br>
+						<a href="ou.net">Oublié le mot de passe?</a>
+					</form>
+				</div>
+			</div>
+
+
+			<div id="Etudiant_login" class="col-12" style="display: none;">
+				<div class="col-12" style="border-bottom: 7px solid #e6e6e6;">
+					<img src="../../Logos/FULL.png" class="logo col-9">
+					<div class="col-3"><input type="submit" name="Retour" value="Retour" onclick="back()"></div>
+				</div>
+				<div id="login" class="login col-12">
+					<div class="col-12"><img src="../../Logos/avatar21.png" class="avatar_login"></div>
+					<form>
+						<input type="text" name="" placeholder="Nom d'utilisateur" required>
+						<input type="password" name="" placeholder="Mot de passe" required id="myInput2">
+						<p id="text2" style="display: none; color: white;margin-left: 50px;">      WARNING! Caps lock is ON.</p>
+						<input type="submit" name="Connection" value="Connection"><br><br>
+						<a href="ou.net">Oublié le mot de passe?</a>
+					</form>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+	var input = document.getElementById("myInput");
+	var text = document.getElementById("text");
+	input.addEventListener("keyup", function(event) 
+	{
+		if (event.getModifierState("CapsLock")) {
+    	text.style.display = "block";
+  	} 
+  	else 
+  	{
+   		text.style.display = "none"
+  	}
+	});
+	
+	var input2 = document.getElementById("myInput2");
+	var text2 = document.getElementById("text2");
+	input2.addEventListener("keyup", function(event2) 
+	{
+		if (event2.getModifierState("CapsLock")) {
+    	text2.style.display = "block";
+  	} 
+  	else 
+  	{
+   	 	text2.style.display = "none"
+  	}
+	});
+</script>
+</body>
+</html>

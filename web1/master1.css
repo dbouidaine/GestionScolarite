@@ -1,0 +1,212 @@
+
+*
+{
+    box-sizing: border-box;
+}
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] 
+{
+    float: left;
+    padding: 15px;
+}
+
+html 
+{
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+}
+body
+{
+	/*background: url(../../wallpapers/Background.jpg);
+	background-size: cover;
+	background-position: 0px -170px;
+	background-repeat: repeat;
+	background-size: all;
+	background-attachment: scroll;	*/
+	font-family: "Lato","Calibri",sans serf;
+	background-color: #e6e6e6;
+}
+.header
+{
+	width: 100%;
+	margin:10px auto;
+	background-color: white;
+	opacity: 1;
+	box-shadow: 2px 2px 50px #C3C3C3;
+}
+
+.Logo
+{
+	width: 100%;
+	max-width: 80%;
+}
+.bord_r
+{
+	border-right: 1px solid black;
+}
+.bord_l
+{
+	border-left: 1px solid black;
+}
+.L-Side
+{
+	margin:20px auto;
+	margin-left: 0;
+	background-color: white;
+	box-shadow: 2px 2px 50px #C3C3C3;
+	height: 100%;
+}
+.R-Side
+{
+	float: right;
+	margin:20px auto;
+	margin-right: 0;
+	background-color: white;
+	box-shadow: 2px 2px 50px #C3C3C3;
+	height: 100%;
+}
+/*-------------Navigation Bar-----------*/
+.navbar
+{ 
+	height: 100%;
+	float: left;
+	overflow: auto;
+	background-color: #666666;
+}	
+.navbar a 
+{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-left: auto;
+	float: left;
+	text-align: center;
+	padding: 10px 40px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+.navbar a:hover 
+{
+  	background-color: #263544;
+  	transition: 0.3s ease;	
+}
+.active
+{
+  	background-color: #666666;
+}
+.menu
+{
+	display: none;
+}
+.navbar:hover .menu
+{
+	display: block;
+}
+/*--------------------------------------*/
+
+/*------------------Phone------------------*/
+.col-s-1 {width: 8.33%;}    
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+/*--------------------------------------*/
+
+/*-----------------Medium Size--------------*/
+@media only screen and (min-width: 768px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+.header
+{
+	max-height: 220px;
+}
+.Logo
+{
+	margin-top: -2.5%;
+	width: 300px;
+	max-width: 100%;
+}
+.menu
+{
+	display: block;
+}
+.menubtn
+{
+	display: none;
+}
+}
+/*----------------------------------*/
+
+/*----------------Normal Size---------------------*/
+@media only screen and (min-width: 1000px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.R-Side
+{
+	width: 70%;
+}
+.header
+{
+	max-height: 110px;
+}
+.Logo
+{
+	float: left;
+	margin-left: 0;
+	margin-top: -2.5%;
+	width: 300px;
+	max-width: 100%;
+}
+.navbar
+{ 
+	height: 100%;
+	margin-top: -30px;
+	margin-bottom: -20px;
+	margin-right:-30px;
+	float: right;
+	padding: 0px;
+}
+.navbar a 
+{
+	padding: 45px 20px;
+}	
+.Logo
+{
+	margin-top: -15px;
+	margin-left: -10px;
+}
+}
+/*----------------------------------*/

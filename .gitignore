@@ -1,0 +1,11 @@
+LOGIN2/*.mdb
+LOGIN2/*.accdb
+LOGIN2/*.xlsx
+LOGIN2/bin
+LOGIN2/obj
+web1/*.mdb
+web1/*.accdb
+web1/*.xlsx
+web1/bin
+web1/obj
+web1/App_Data

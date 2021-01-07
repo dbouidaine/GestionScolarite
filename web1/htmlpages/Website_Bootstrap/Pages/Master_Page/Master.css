@@ -1,0 +1,104 @@
+body
+{
+	background-color: #e6e6e6;
+	overflow-x: hidden;
+}
+nav
+{
+	background-color: rgba(45,45,45,0.98);
+	box-shadow: 2px 2px 20px #C3C3C3;
+}
+nav a:hover
+{
+	transition: 0.3s;
+}
+.my-container
+{
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.my-row
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.my-col
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+table 
+{
+  	border-collapse: collapse;
+  	width: 100%;
+}
+th
+{
+	color: black;
+	font-size: 28px;
+	background-color: #e3e3e3;
+}
+td
+{
+	font-size: 20px;
+}
+th, td 
+{
+  	text-align: left;
+  	padding: 10px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+}
+table a
+{
+	color: #007bff;
+	text-decoration: unset;
+}
+table a:hover
+{
+	color: black;
+	text-decoration: unset;
+	transition:0.3s;
+}	
+.card
+{
+	border: none;
+	text-align: center;
+}
+.cavatar
+{
+	width: 20%;
+}
+.Changer
+{
+	display: none;
+	margin-top: 40%;
+	height: 15%;
+	background-color: white;
+}
+.Changer :hover
+{
+	display: grid;
+	margin-top: 40%;
+	height: 15%;
+	background-color: white;
+}
+.Not
+{
+	width: 300px;
+	margin-top: 15%;
+}
+@media only screen and (min-width: 768px) 
+{
+	.cavatar
+	{
+		width: 60%;
+	}
+	.changer
+	{
+		height: 25%;
+	}
+}

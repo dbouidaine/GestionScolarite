@@ -1,0 +1,116 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="web1.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="htmlpages/Website/pages/Teacher_Page/Home_Master/home_master.css" />
+    <link rel="stylesheet" type="text/css" href="htmlpages/Website_Bootstrap/fontawesome-free-5.7.2-web/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <script  type="text/javascript" src="https://kit.fontawesome.com/0b650052b9.js"></script>
+    <link rel="stylesheet" href="htmlpages/Website_Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.css"/>
+    <script type="text/javascript"src="htmlpages/Website_Bootstrap/jquery-3.3.1.js"></script>
+    <script type="text/javascript"src="htmlpages/Website_Bootstrap/popper.min.js"></script>
+    <script type="text/javascript" src="htmlpages/Website_Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="htmlpages/Website_Bootstrap/Pages/Master_Page/master.css" />
+    <link rel="stylesheet" href="htmlpages/Website_Bootstrap/intro.js-2.7.0/introjs.css">
+    <link rel="stylesheet" type="text/css" href="htmlpages/Website_Bootstrap/intro.js-2.7.0/themes/introjs-modern.css">
+    <script type="text/javascript" src="htmlpages/Website_Bootstrap/intro.js-2.7.0/intro.js"></script>
+     <link rel="stylesheet" type="text/css" href="htmlpages/Website_Bootstrap/modale.css"/>
+     <script type="text/javascript"src="htmlpages/Website_Bootstrap/modale.js"></script> 
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <div id="divTemp" runat="server">
+            <nav data-step="1" data-intro="La barre de navigation, cliquer sur une de ces pages pour les ouvrir" class="navbar navbar-expand-md navbar-dark sticky-top p-1 d-print-none">
+			    <a class="navbar-brand" href="#"><img alt="" src="htmlpages\Website_Bootstrap\Logos\FULL.png" class="Logo" style="width: 200px; margin-left: 10px;" /></a> 
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    	        <span class="navbar-toggler-icon"></span>
+	  	        </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    				<div class="navbar-nav ml-auto">
+		                <asp:LinkButton ID="Acceuil" runat="server" CssClass ="nav-item nav-link"><i class="fa fa-home"></i> Acceuil</asp:LinkButton>
+					  	<a class="nav-item nav-link" href="javascript:void(0);" onclick="BarSelector();javascript:introJs().start();"><i class="fa fa-question-circle"></i> Guide</a>
+                        <asp:LinkButton ID="Parametres" runat="server" CssClass ="nav-item nav-link"><i class="fa fa-cog"></i> Parametres</asp:LinkButton> 
+					  	<asp:LinkButton ID="Deconnecter" runat="server" OnClick ="Deconnecter_Click" CssClass ="nav-item nav-link"><i class="fas fa-sign-out-alt"></i> Deconnecter</asp:LinkButton> 
+                    </div>
+                </div>
+		    </nav >
+	    </div>
+	 <div class="container-fluid my-container p-1">
+		<div class="my-row row justify-content-around">
+			<div class="my-col col-md-3 ml-md-3 d-print-none" style="box-shadow: none;">
+                <asp:Panel ID="Panel1" runat="server">
+            	    <div data-step="2" data-intro="Verifier Toujours combien de jour resté pour envoyer les informations à l'administration " runat="server" id ="notification"   class="alert alert-danger alert-dismissible">
+  					    <!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
+  					    &nbsp;<asp:Label ID="Label12" runat="server" Text=""></asp:Label>
+				    </div>				
+                </asp:Panel>
+                <div data-step="3" data-intro="Ici, vous pouvez voir les informations de l'utilisateur, allez aux parametres pour changer la photo de profile ou le mot de passe"  class="card">
+                    <asp:Label Visible ="false"  ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:Image ID="img" class="card-img-top mx-auto my-2 cavatar" runat="server"  ImageUrl="htmlpages/Website_Bootstrap/Logos/man.png" alt="Card image" />
+                    <div class="card-body">
+                        <asp:Label ID="Label2" runat="server" Visible="false"  ></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="" Visible ="false" ></asp:Label>
+                        <br />
+                        <h4 class="card-title">Nom: <span style="color: #263544"> <asp:Label ID="Label1" runat="server" Text=""></asp:Label></span> </h4>                    
+                        <h4 class="card-title"> Prénom:<span style="color: #263544"><asp:Label ID="Label4" runat="server" Text=""></asp:Label></span></h4>
+                        <p class="card-text">
+                            <asp:Label ID="Label6" runat="server" Text="" Visible ="false" ></asp:Label><span style="color: #263544"><asp:Label ID="Label8" runat="server" Text="" Visible ="false" ></asp:Label> </span>
+                            <asp:Label ID="Label7" runat="server" Text="" Visible ="false" ></asp:Label>  <span style="color: #263544"><asp:Label ID="Label9" runat="server" Text="" Visible ="false" ></asp:Label> </span>
+                        </p>
+                        <div data-step="4" data-intro="voir le pourcentage des informations envoyées par l'enseignant/le pourcentage des moyennes supérieur à 10 pour l'étudiant" >
+                        <asp:Label ID="Label10" runat="server" Text=""  ></asp:Label> 
+                        <div class="progress">
+                       
+							<div runat="server" id="progressbar" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+							    <asp:Label ID="Label11" runat="server" Text=""  ></asp:Label> 
+						    </div>
+                        </div>
+                        </div>
+                        <br />
+                        <asp:LinkButton  data-step="5" data-intro="cliquer ici pour passer à la page paramétres"  ID="Parametres2" runat="server" CssClass="btn btn-primary"><i class="fa fa-cog"></i> Parametres</asp:LinkButton> 
+                        <asp:Panel ID="Panel2" runat="server" data-step="6" data-intro="Ici, vous pouvez voir les moyennes semestrielles, le rang et la décision" >    		                    
+                            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="100%" 
+                                AutoGenerateRows="False" DataSourceID="ETUDInfo" GridLines="None">
+                                <Fields>
+                                    <asp:BoundField DataField="MoySem1" HeaderText="MoySem1" 
+                                        SortExpression="MoySem1" />
+                                    <asp:BoundField DataField="MoySem2" HeaderText="MoySem2" 
+                                        SortExpression="MoySem2" />
+                                    <asp:BoundField DataField="MoyAnu" HeaderText="MoyAnu" 
+                                        SortExpression="MoyAnu" />
+                                    <asp:BoundField DataField="Rang" HeaderText="Rang" SortExpression="Rang" />
+                                    <asp:BoundField DataField="Decision" HeaderText="Decision" 
+                                        SortExpression="Decision" />
+                                </Fields>
+                            </asp:DetailsView>
+                            <asp:SqlDataSource ID="ETUDInfo" runat="server" 
+                                ConnectionString="" 
+                                SelectCommand="SELECT MoySem1, MoySem2, MoyAnu, Rang, Decision FROM INSCRITSUE WHERE (Matricule = @Matricule)">
+                                <SelectParameters>
+                                    <asp:SessionParameter Name="Matricule" SessionField="Matricule" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>                    
+                        </asp:Panel> 
+                    </div>
+                </div> 	
+            </div>  
+		    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+	  </div>
+	</div>
+                  
+    </form>
+</body>
+<script type="text/javascript">
+    function BarSelector() { }
+</script>
+</html>
+f

@@ -1,0 +1,277 @@
+body{
+	margin:0;
+	padding: 0;
+	background: url(wallpapers/Background.jpg);
+	background-size: cover;
+	background-position: 0px -170px;
+	font-family: 'Lato','Calibri',sans serf;
+	background-repeat: repeat;
+	background-size: all;
+	background-attachment: scroll;	
+}
+.tab
+{
+    border-color : Black 
+}
+/*.header
+{
+	padding: 7.5px 10px 7.5px;
+}*/
+.ESI_Logo
+{
+	width:100px;
+	max-width: 8%;
+	position:absolute;
+	right: 20px;
+}
+.Logo
+{
+	position: absolute;
+	width:300px;
+	max-width: 22%;
+    top: 12px;
+    left: 27px;
+}
+.container
+{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	padding-left: 40px;
+	
+}
+/*----------- First Page ------------*/
+.choose
+{
+	width: 1000px;
+	height: 500px;
+	color:#000;
+	top: 22%;
+	left: 2.5%;
+	position: absolute;
+	padding: 10px 20px;
+	opacity: 1;
+	box-sizing: border-box;
+}
+.choose_teacher
+{
+	height: 80%;
+	width: 23%;
+	opacity: 0.7; 
+	float: left;
+}
+.choose_student
+{
+	height: 100%;
+	width: 23%;
+	opacity: 0.7;
+	float: left;
+	margin-left: 30px;
+}
+.avatar
+{
+	margin-top: 20%;
+	border:3px solid black;
+	background-color: transparent;
+	width: calc(80% - 6px);
+	border-radius: 50%;
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.avatar:hover
+{
+	cursor: pointer;
+	background-color:#04A096; 
+	opacity: 0.6;
+}
+.choose input[type="submit"]
+{
+	margin-top: 10%; 
+	border: none;
+	outline: none;
+	width: 80%;
+	height: 60px;
+	background: #04A096;
+	color: black;
+	font-size: 25px;
+	border: 1px solid black;
+	border-radius: 50px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+.choose input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: white;
+	color: black;
+	opacity: 0.2;
+}
+/*----------- Login Page ------------*/
+
+.login
+{
+	border:none;
+	position: absolute;
+	top: 22.5%;
+	left: 1%;
+	width: 400px;
+	height: 500px;
+	box-sizing: content-box;
+	display: block;
+}
+.back
+{
+	margin-top: -50%;
+	margin-left: 3%;
+	border:none;
+	background-color: transparent;
+	width: 15%;
+	border-radius: 50%;
+	opacity: 0.7;
+	position:absolute; 
+}
+.back:hover
+{
+	cursor: pointer;
+	background-color:#04A096; 
+	opacity: 1;
+	transition: 0.3s;
+}
+.avatar_login
+{
+	margin-top: 3%;
+	margin-bottom: 20px;
+	margin-left: 30%;
+	border:5px solid black;
+	background-color: transparent;
+	width: 35%;
+	border-radius: 50%;
+	opacity: 0.6;
+}
+.login input
+{
+	opacity: 0.7;
+	padding-left: 60px;
+    font-size: 16px;	
+	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-left: 20%;
+}
+.login input[type="text"], input[type="password"]
+{
+	border:none;
+	background: white;
+	opacity: 0.5;
+	background-clip: padding-box;	
+	outline: none;
+	height: 45px;
+	color: #000;
+	font size: 16px;
+	border-radius: 50px;
+}
+.login input[type="text"]:focus, input[type="password"]:focus
+{
+	height: 45px;
+	opacity: 0.7;
+	border: 1px solid black;
+}
+.loginsubmit
+{
+	padding: 0px;
+	/*text-align: left;
+	/*/border: none;
+	outline: none;
+	width: 40%;
+	background: #04A096;
+	color: black;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 50px;
+	opacity: 0.6;
+}
+.loginsubmit:hover
+{
+	cursor: pointer;
+	background: white;
+	color: black;
+	opacity: 0.2;
+	transition: 0.3s;
+}
+.login a
+{
+	color: black;
+	opacity: 0.5;
+	font-size: 20px;
+	margin-left: 43%;
+}
+.login a:hover
+{
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.username
+{
+	position: absolute;
+	width: 8%;
+	margin-top: 3%;
+	margin-left: -63%;
+	opacity: 0.5;
+}
+.password
+{
+	position: absolute;
+	width: 6%;
+	opacity: 0.5;
+	margin-top: 3.6%;
+	margin-left: -62%;
+}
+@media only screen and (max-width: 1500px)
+{
+	.ESI_Logo
+	{
+		width:70px;
+		max-width: 8%;
+		position:absolute;
+		right: 20px;
+	}
+	.Logo
+	{
+		position: absolute;
+		width:250px;
+		max-width: 22%;
+	}
+	.choose
+	{
+		width: 750px;
+		height: 500px;
+		top: 25%;
+	}
+	.choose input[type="submit"]
+	{	
+		height: 50px;
+		font-size: 20px;
+	}
+	/*login page*/
+	.login
+	{
+		top: 25%;
+		left: 1%;
+		width: 350px;
+		height: 500px;
+	}
+	.login a
+	{
+		opacity: 0.5;
+		font-size: 15px;
+		margin-left: 40%;
+	}
+	.avatar_login
+	{
+		margin-top: 5%;
+		margin-bottom: -65px;
+		width: 35%;
+		border-radius: 50%;
+		opacity: 0.6;
+	}
+
+}

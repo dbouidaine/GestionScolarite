@@ -1,0 +1,62 @@
+/*-------------Page_Bar----------------*/
+.page_bar
+{
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(45,45,45, 0.98);
+}	
+.page_bar a 
+{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-left: auto;
+	float: left;
+	text-align: center;
+	padding: 10px 40px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+.page_bar a:hover 
+{
+	color: black;
+  	background-color: white;
+  	transition: 0.3s ease;	
+}
+.page_bar .active
+{
+  	background-color: white;
+  	color: black;
+}
+/*--------------------------------------*/
+table 
+{
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+}
+th
+{
+	font-size: 26px;
+	background-color: gray;
+}
+th, td 
+{
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+}
+table a
+{
+	color: black;
+	text-decoration: unset;
+}
+table a:hover
+{
+	color: gray;
+	text-decoration: unset;
+}

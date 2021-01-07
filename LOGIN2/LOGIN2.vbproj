@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1ED4DC53-A751-4628-8B4F-4243CEBC6154}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>LOGIN2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LOGIN2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LOGIN2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Database1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EXPORT_BDDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EXPORT_BDDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EXPORT_BDDDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EXPORT_BDDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.vb">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.vb">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPORTER_BDDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IMPORTER_BDDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IMPORTER_BDDDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IMPORTER_BDDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Page2.designer.vb">
+      <DependentUpon>Page2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaisieNotesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesqsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesqsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesSZDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesSZDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesSZDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesSZDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaisieNotesSZDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaisieNotesSZDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet10.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet12.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet13.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet14.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet15.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet16.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet17.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScolariteDataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScolariteDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page2.resx">
+      <DependentUpon>Page2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EXPORT_BDDDataSet.xsc">
+      <DependentUpon>EXPORT_BDDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EXPORT_BDDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EXPORT_BDDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EXPORT_BDDDataSet.xss">
+      <DependentUpon>EXPORT_BDDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EXPORT_BDDDataSet1.xsc">
+      <DependentUpon>EXPORT_BDDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EXPORT_BDDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EXPORT_BDDDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EXPORT_BDDDataSet1.xss">
+      <DependentUpon>EXPORT_BDDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IMPORTER_BDDDataSet.xsc">
+      <DependentUpon>IMPORTER_BDDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IMPORTER_BDDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IMPORTER_BDDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IMPORTER_BDDDataSet.xss">
+      <DependentUpon>IMPORTER_BDDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IMPORTER_BDDDataSet1.xsc">
+      <DependentUpon>IMPORTER_BDDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IMPORTER_BDDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IMPORTER_BDDDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IMPORTER_BDDDataSet1.xss">
+      <DependentUpon>IMPORTER_BDDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SaisieNotesDataSet.xsc">
+      <DependentUpon>SaisieNotesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesDataSet.xss">
+      <DependentUpon>SaisieNotesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet1.xsc">
+      <DependentUpon>SaisieNotesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesDataSet1.xss">
+      <DependentUpon>SaisieNotesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet2.xsc">
+      <DependentUpon>SaisieNotesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesDataSet2.xss">
+      <DependentUpon>SaisieNotesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet3.xsc">
+      <DependentUpon>SaisieNotesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesDataSet3.xss">
+      <DependentUpon>SaisieNotesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet4.xsc">
+      <DependentUpon>SaisieNotesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesDataSet4.xss">
+      <DependentUpon>SaisieNotesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet5.xsc">
+      <DependentUpon>SaisieNotesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesDataSet5.xss">
+      <DependentUpon>SaisieNotesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesqsDataSet.xsc">
+      <DependentUpon>SaisieNotesqsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesqsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesqsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesqsDataSet.xss">
+      <DependentUpon>SaisieNotesqsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesSZDataSet.xsc">
+      <DependentUpon>SaisieNotesSZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesSZDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesSZDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesSZDataSet.xss">
+      <DependentUpon>SaisieNotesSZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesSZDataSet1.xsc">
+      <DependentUpon>SaisieNotesSZDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesSZDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesSZDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesSZDataSet1.xss">
+      <DependentUpon>SaisieNotesSZDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesSZDataSet2.xsc">
+      <DependentUpon>SaisieNotesSZDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SaisieNotesSZDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaisieNotesSZDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SaisieNotesSZDataSet2.xss">
+      <DependentUpon>SaisieNotesSZDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet.xsc">
+      <DependentUpon>ScolariteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet.xss">
+      <DependentUpon>ScolariteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet1.xsc">
+      <DependentUpon>ScolariteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet1.xss">
+      <DependentUpon>ScolariteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet10.xsc">
+      <DependentUpon>ScolariteDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet10.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet10.xss">
+      <DependentUpon>ScolariteDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet11.xsc">
+      <DependentUpon>ScolariteDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet11.xss">
+      <DependentUpon>ScolariteDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet12.xsc">
+      <DependentUpon>ScolariteDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet12.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet12.xss">
+      <DependentUpon>ScolariteDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet13.xsc">
+      <DependentUpon>ScolariteDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet13.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet13.xss">
+      <DependentUpon>ScolariteDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet14.xsc">
+      <DependentUpon>ScolariteDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet14.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet14.xss">
+      <DependentUpon>ScolariteDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet15.xsc">
+      <DependentUpon>ScolariteDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet15.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet15.xss">
+      <DependentUpon>ScolariteDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet16.xsc">
+      <DependentUpon>ScolariteDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet16.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet16.xss">
+      <DependentUpon>ScolariteDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet17.xsc">
+      <DependentUpon>ScolariteDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet17.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet17.xss">
+      <DependentUpon>ScolariteDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet2.xsc">
+      <DependentUpon>ScolariteDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet2.xss">
+      <DependentUpon>ScolariteDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet3.xsc">
+      <DependentUpon>ScolariteDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet3.xss">
+      <DependentUpon>ScolariteDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet4.xsc">
+      <DependentUpon>ScolariteDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet4.xss">
+      <DependentUpon>ScolariteDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet5.xsc">
+      <DependentUpon>ScolariteDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet5.xss">
+      <DependentUpon>ScolariteDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet6.xsc">
+      <DependentUpon>ScolariteDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet6.xss">
+      <DependentUpon>ScolariteDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet7.xsc">
+      <DependentUpon>ScolariteDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet7.xss">
+      <DependentUpon>ScolariteDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet8.xsc">
+      <DependentUpon>ScolariteDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet8.xss">
+      <DependentUpon>ScolariteDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet9.xsc">
+      <DependentUpon>ScolariteDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ScolariteDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScolariteDataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScolariteDataSet9.xss">
+      <DependentUpon>ScolariteDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-pceqng-gif-6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="EXPORT BDD.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IMPORTER BDD.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SaisieNotes.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scolarite.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scolarite_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Scolarite.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

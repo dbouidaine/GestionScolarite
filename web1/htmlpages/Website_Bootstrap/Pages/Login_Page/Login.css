@@ -1,0 +1,249 @@
+*
+{
+    box-sizing: border-box;
+}
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] 
+{
+    float: left;
+    padding: 15px;
+}
+body
+{
+	height: 100%;
+	font-family: "Lato", sans-serif;
+	background-color: rgba(45,45,45,0.98);
+	background-image: url("../../wallpapers/Wallpaper4.jpg");
+  	background-size: cover;
+}
+a
+{
+	padding: 15px;
+	margin-top:2%;	
+	border: none;
+	outline: none;
+	text-align: center;
+	width: 90px;
+	height: 50px;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	border: 1px solid white;
+	border-radius: 50px;
+	opacity: 0.8;
+
+}
+a:hover
+{
+	cursor: pointer;
+	background: black;
+	color: white;
+	opacity: 0.6;
+	transition: 0.3s;
+} 
+input[type="button"]
+{
+	margin-top: 20%;
+	padding: 0px;
+	text-align: center;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	border: 1px solid white;
+	border-radius: 50px;
+	opacity: 0.8;
+}
+input[type="button"]:hover
+{
+	cursor: pointer;
+	background: black;
+	color: white;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+.logo
+{
+	width: 60%;
+}
+/*------------------------------------------*/
+.container
+{
+	font-family: "Lato";
+	/*background-color: rgba(45,45,45, 0.98);*/
+	height: 600px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+	/*box-shadow: 2px 2px 50px #C3C3C3;*/
+}
+.avatar
+{
+	margin-top: 20%;
+	border:3px solid white;
+	background-color: transparent;
+	width: 90%;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+.avatar:hover
+{
+	cursor: pointer;
+	background-color:black; 
+	opacity: 0.6;
+}
+.choose input[type="button"]
+{
+	margin-top: 10%; 
+	border: none;
+	outline: none;
+	width: 90%;
+	height: 60px;
+	background: transparent;
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+	border-radius: 50px;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+.choose input[type="button"]:hover
+{
+	cursor: pointer;
+	background: black;
+	opacity: 0.6;
+}
+/*----------- Login Page ------------*/
+
+.login
+{
+	border:none;
+	box-sizing: content-box;
+}
+.avatar_login
+{
+	border:5px solid white;
+	background-color: transparent;
+	width:45%;
+	transform: translate(50%,0%);
+	border-radius: 50%;
+}
+.login input
+{
+	opacity: 0.7;
+	padding-left: 60px;
+    font-size: 16px;	
+	width: 70%;
+	margin-top: 2%;
+}
+.login input[type="text"], input[type="password"]
+{
+	transform: translate(12.5%,0%);
+	border:none;
+	background: white;
+	opacity: 0.5;
+	background-clip: padding-box;	
+	outline: none;
+	height: 45px;
+	color: #000;
+	font-size: 16px;
+	border-radius: 50px;
+}
+.login input[type="text"]:focus, input[type="password"]:focus
+{
+	height: 45px;
+	opacity: 0.7;
+	border: 1px solid black;
+}
+.login input[type="submit"]
+{
+	margin-top: 2%;
+	padding: 0px;
+	text-align: center;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	color: white;
+	font-size: 20px;
+	border: 1px solid white;
+	border-radius: 50px;
+	opacity: 0.8;
+	width: 40%;
+	transform: translate(25%,0%);
+}
+.login input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: black;
+	color: white;
+	opacity: 0.6;
+	transition: 0.6s;
+}
+.login a
+{
+	color: white;
+	opacity: 0.6;
+	font-size: 20px;
+	margin-left: 43%;
+}
+.login a:hover
+{
+	opacity: 0.8;
+	transition: 0.3s;
+}
+/*------------------------------------------*/
+/*------------------Normal------------------*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row-1 {height: 8.33%;}
+.row-2 {height: 16.66%;}
+.row-3 {height: 25%;}
+.row-4 {height: 33.33%;}
+.row-5 {height: 41.66%;}
+.row-6 {height: 50%;}
+.row-7 {height: 58.33%;}
+.row-8 {height: 66.66%;}
+.row-9 {height: 75%;}
+.row-10 {height: 83.33%;}
+.row-11 {height: 91.66%;}
+.row-12 {height: 100%;}
+/*--------------------------------------*/
+
+/*----------------Page---------------------*/
+@media only screen and (max-width: 1000px) {
+.col-s-1 {width: 8.33%;}    
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
